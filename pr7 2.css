@@ -1,0 +1,99 @@
+/* Apply background gradient to the body */
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(-135deg, #a1c4fd, #c2e9fb,#e560dc,#ef5f5f,#d840b6,#ffb374,#d840b6);
+    color: #333;
+    background-size: 400% 400% ;
+    animation: bg 12s ease infinite;
+  }
+  div img hover{
+    filter: grayscale(1);
+    transform: scale(1.03);
+  }
+  .gallery{
+    
+  border: 5px solid black;
+  padding: 10px;
+  }
+  img{
+    width: 350px;
+    height: 200px;
+    
+  }
+  
+  nav{
+    background-color: whitesmoke;
+    display: grid;
+    place-items: center;
+}nav ul a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color:#000;
+    font-size: 18px;
+}
+  
+  /* Navigation bar styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    padding: 1rem 2rem;
+    color: white;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .navbar .nav-links li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Gallery Section */
+  .gallery-title {
+    text-align: center;
+    margin: 2rem 0;
+    color: #444;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 2rem 2rem;
+  }
+  
+  .image-card {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-card img:hover {
+    transform: scale(1.05);
+  }
+  
